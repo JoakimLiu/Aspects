@@ -31,4 +31,13 @@
     } error:NULL];
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [[self class] classMethod];
+}
+
++ (void)classMethod {
+    NSLog(@"1111");
+}
+
 @end
